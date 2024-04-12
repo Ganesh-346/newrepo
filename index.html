@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>grid Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ff0000;
+    }
+    
+    /*.item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }*/
+    
+    .parent {
+      display: grid;
+
+      grid-template-columns: 1fr 2fr 3fr;
+      grid-template-rows: 100px 200px 100px 100px ;
+      grid-gap: 10px;
+      
+       
+    }
+    .item{
+      text-align: center;
+    }
+    
+    #item1 {
+      
+         grid-column: 1/4;
+        
+      background-color: aqua;
+    }
+    
+    #item2 {
+   grid-column: 1/3;
+   grid-row: 2/5;
+      background-color: blue;
+       
+    }
+    
+    #item3 {
+     
+      background-color: rgb(18, 248, 37);
+       
+     
+    }
+    
+    #item4 {
+       
+      background-color: rgb(13, 3, 104);
+      color: aliceblue;
+    }
+    
+    #item5 {
+     
+      background-color: rgb(222, 246, 5);
+    }
+    
+    #item6 {
+       
+      background-color: rgb(168, 59, 68);
+        
+    }
+    
+    #item7 {
+       
+      background-color: rgb(222, 246, 5);
+       
+    }
+    
+     
+  </style>
+</head>
+<body>
+<div class="parent">
+  <div id="item1" class="item">header</div>
+  <div id="item2" class="item">sidebar</div>
+  <div id="item3" class="item">small box</div>
+  <div id="item4" class="item">small box</div>
+  <div id="item5" class="item">small box</div>
+  <div id="item6" class="item">Main Content</div>
+  <div id="item7" class="item">Footer</div>
+ 
+  
+</div>
+</body>
+</html>
